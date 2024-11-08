@@ -1,12 +1,12 @@
 :root {
-	--Main: #101828;
-	--Text: #475467;
-	--Gray: #6c717b;
-	--Button: #e44848;
-	--Button-Hover: #d84343;
-	--Rating: #ffc531;
-	--Gray-light: #dadde1;
-	--Badges: #f2f4f7;
-	--Inputs: #f7f7f7;
-	--White: #fff;
+  --main: #101828;
+  --text: #475467;
+  --gray: #6c717b;
+  --button: #e44848;
+  --button-hover: #d84343;
+  --rating: #ffc531;
+  --gray-light: #dadde1;
+  --badges: #f2f4f7;
+  --inputs: #f7f7f7;
+  --white: #fff;
 }

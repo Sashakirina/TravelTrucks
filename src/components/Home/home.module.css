@@ -1,0 +1,39 @@
+.container {
+  height: 100vh;
+  background: url(../../../public/Picture.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.textWrapper {
+}
+
+.title {
+  color: var(--inputs);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 32px; /* 66.667% */
+}
+
+.text {
+  color: var(--inputs);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+
+.link {
+  width: 173px;
+  padding: 16px 46px;
+  border-radius: 200px;
+  background: var(--button);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: -0.08px;
+  text-decoration: none;
+  cursor: pointer;
+}

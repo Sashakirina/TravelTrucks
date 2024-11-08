@@ -3,11 +3,21 @@ import style from './navigation.module.css';
 
 function Navigation() {
   return (
-    <nav>
-      <NavLink className={style.link} to="/">
+    <nav className={style.nav}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? `${style.link} ${style.active}` : style.link
+        }
+        to="/"
+      >
         Home
       </NavLink>
-      <NavLink className={style.link} to="/catalog">
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? `${style.link} ${style.active}` : style.link
+        }
+        to="/catalog"
+      >
         Catalog
       </NavLink>
     </nav>

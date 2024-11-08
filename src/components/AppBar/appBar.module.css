@@ -1,0 +1,15 @@
+.appBar {
+  display: flex;
+  width: 1440px;
+  padding: 24px 64px;
+  align-items: center;
+  gap: 450px;
+  border-bottom: 1px solid var(--badges);
+  background: var(--inputs);
+}
+
+.iconLogo {
+  width: 136px;
+  height: 16px;
+  flex-shrink: 0;
+}
