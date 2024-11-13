@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--gray-light);
+  background-color: var(--white);
+  width: 888px;
+  height: 368px;
+}
+
+.picture {
+  width: 292px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.titleWrapper {
+  display: flex;
+  width: 524px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priceWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.title,
+.price {
+  color: var(--main);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33em;
+}
+
+.iconHeart {
+  width: 25px;
+  height: 22px;
+  fill: var(--main);
+}
+
+.iconStar,
+.iconMap {
+  width: 16px;
+  height: 16px;
+  fill: var(--rating);
+}
+
+.iconMap {
+  fill: var(--main);
+}
+
+.info {
+  color: var(--main);
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.infoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  width: 525px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5em;
+}
