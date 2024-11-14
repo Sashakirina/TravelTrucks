@@ -1,4 +1,5 @@
 import FilterOption from '../FilterOptions/FilterOption.jsx';
+import style from './filterOptionsList.module.css';
 
 function FilterOptionsList({ data }) {
   const booleanOptions = Object.entries(data)
@@ -6,7 +7,7 @@ function FilterOptionsList({ data }) {
     .map(([key, value]) => key);
 
   return (
-    <ul>
+    <ul className={style.list}>
       {' '}
       {booleanOptions.map(option => (
         <li key={option}>

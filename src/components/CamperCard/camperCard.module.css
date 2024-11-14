@@ -7,7 +7,7 @@
   border: 1px solid var(--gray-light);
   background-color: var(--white);
   width: 888px;
-  height: 368px;
+  min-height: 368px;
 }
 
 .picture {
@@ -19,11 +19,19 @@
   object-position: center;
 }
 
+.camperInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 320px;
+}
+
 .titleWrapper {
   display: flex;
   width: 524px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .priceWrapper {
@@ -40,6 +48,7 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 1.33em;
+  letter-spacing: -0.08px;
 }
 
 .iconHeart {
@@ -74,6 +83,7 @@
 .infoWrapper {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
 .description {
@@ -85,4 +95,19 @@
   color: var(--text);
   font-size: 16px;
   line-height: 1.5em;
+}
+
+.btnShow {
+  width: 166px;
+  height: 56px;
+  padding: 16px 16px;
+  border-radius: 200px;
+  background: var(--button);
+  border: none;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: -0.08px;
+  margin-top: auto;
 }

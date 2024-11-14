@@ -18,35 +18,38 @@ function CamperCard({ camper }) {
   const locationReverse = location.split(',').reverse().join(', ');
   const formattedPrice = price.toFixed(2);
   const imgUrl = gallery[0].thumb;
+  const shortName = name.slice(0, 30);
 
   return (
     <div className={style.card}>
-      <img src={imgUrl} alt="" className={style.picture} />
-      <div>
-        <div className={style.titleWrapper}>
-          <h2 className={style.title}>{name}</h2>
-          <div className={style.priceWrapper}>
-            <p className={style.price}> € {formattedPrice}</p>
-            <Icon className={style.iconHeart} iconId={'icon-heart'} />
-          </div>{' '}
-        </div>
-        <div className={style.infoContainer}>
-          <div className={style.infoWrapper}>
-            <Icon className={style.iconStar} iconId={'icon-star'} />
-            <p
-              className={style.info}
-            >{`${rating} (${rewievsCount} Rewievs)`}</p>
+      <img src={imgUrl} alt="camper" className={style.picture} />
+      <div className={style.camperInfo}>
+        <div>
+          <div className={style.titleWrapper}>
+            <h2 className={style.title}>{shortName}</h2>
+            <div className={style.priceWrapper}>
+              <p className={style.price}> € {formattedPrice}</p>
+              <Icon className={style.iconHeart} iconId={'icon-heart'} />
+            </div>{' '}
           </div>
-          <div className={style.infoWrapper}>
-            <Icon className={style.iconMap} iconId={'icon-map'} />
-            <p className={style.info}>{locationReverse}</p>
+          <div className={style.infoContainer}>
+            <div className={style.infoWrapper}>
+              <Icon className={style.iconStar} iconId={'icon-star'} />
+              <p
+                className={style.info}
+              >{`${rating} (${rewievsCount} Rewievs)`}</p>
+            </div>
+            <div className={style.infoWrapper}>
+              <Icon className={style.iconMap} iconId={'icon-map'} />
+              <p className={style.info}> {locationReverse}</p>
+            </div>
           </div>
         </div>
 
         <p className={style.description}>{description}</p>
-        <div>
-          <FilterOptionsList data={data} />
-        </div>
+
+        <FilterOptionsList data={data} />
+        <button className={style.btnShow}>Show more</button>
       </div>
     </div>
   );

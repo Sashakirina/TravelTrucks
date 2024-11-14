@@ -1,11 +1,16 @@
 .option {
   display: flex;
-  padding: 12px 18px;
+  padding: 12px 14px;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   border-radius: 100px;
   background: var(--badges);
   mix-blend-mode: multiply;
+  letter-spacing: -0.08px;
+  color: var(--main);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .icon {
